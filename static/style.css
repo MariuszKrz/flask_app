@@ -1,0 +1,187 @@
+body	{
+	background-color: #556B2F;
+	font-family: 'Marcellus', serif;
+	font-size: 16px;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+.container	{
+	  width: 1000px;
+	  margin-left: auto;
+	  margin-right: auto;
+}
+.header	{
+	float: left;
+	width: 50%;
+	font-size: 38px;
+	text-align: left;
+	padding: 20px;
+}
+.zerowanie
+{
+    clear: both;
+}
+
+.content	{
+	font-family: 'Marcellus', serif;
+	letter-spacing: 2px;
+	font-size: 16px;
+	width: 960px;
+	padding: 20px;
+}
+
+.stopka
+{
+	border-top: 1px solid;
+	border-top-color: #DAA520;
+	width: 960px;
+	margin: 20px;
+	font-size: 14px;
+	text-align: center;
+	color: #DAA520;
+}
+
+table, th, tr, td
+{
+		color: white;
+		text-align: center;
+		border-collapse: collapse;
+		padding: 5px;
+}
+
+.capt
+{
+	color: yellow;
+	padding: 5px;
+	font-size: 1.3em;
+}
+
+table#tabela
+{
+	width: 100%;
+}
+
+#tabela tr#dodawanie
+{
+	background-color: #556B2F;
+}
+
+#tabela tr:nth-child(odd)
+{
+	background-color: #888888;
+	border-bottom: 1px solid white;
+}
+
+#tabela tr:nth-child(even)
+{
+	background-color: #b3b3b3;
+	border-bottom: 1px solid white;
+}
+
+table#tabela th
+{
+	width: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	background-color: #6666ff;
+	color: #ffff33;
+}
+
+.form
+{
+	float: left;
+	opacity: 0.6;
+	width: 40%;
+	padding: 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+.form:hover
+{
+	opacity: 1;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+form
+{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	background-color: #a4c171;
+	width: 100%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 3px solid #a2ae76;
+}
+
+input[type=text]
+{
+	background-color: #a4c171;
+	width: 100%;
+    padding: 5px 6px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #a2ae76;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus
+{
+    border: 2px solid #ffffcc;
+}
+
+
+input[type=date]
+{
+	background-color: #a4c171;
+    padding: 2px 6px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #a2ae76;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=date]:focus
+{
+    border: 2px solid #ffffcc;
+}
+
+input[type=submit]
+{
+    width: 50%;
+    background-color: #a4c171;
+    color: #000;
+    padding: 5px 3px;
+    border: 2px solid #a2ae76;
+-webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+ border: 2px solid #ffffcc;
+}
+
+.btnon
+{
+	background-color: #FFFF33;
+	text-decoration: none;
+	cursor: crosshair;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+}

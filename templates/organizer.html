@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block title %}Witamy!{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+	<div>
+	<div class="header">
+			<p>TERMINARZ</p>
+
+	</div>
+<!-- ----------------------------	FORMULARZ DODAWANIA REKORDÓW ------------------------------>
+	<div class="form">
+			<form method="post" action="zadanieAdd.php">
+				Nazwa zadania:   <input type="text" name="nazwaZadania" placeholder="Nazwa zadania" onfocus="this.placeholder=''" onblur="this.placeholder='Nazwa zadania'"><br/><br/>
+				Termin:   <input type="date" name="termin" value="Data"/><br/><br/>
+				Krótki opis:   <input type="text" class="opis" name="opis" placeholder="Opis" onfocus="this.placeholder=''" onblur="this.placeholder='Opis'"><br/>
+				</br><input type="submit" value="dodaj"/>
+			</form>			
+	</div>
+	<div class="zerowanie"></div>
+	</div>
+	<div class="content">
+	
+<!-- ---------------------------- TABELA REKORDÓW ------------------------------>
+	<table id="tabela">
+		<tr>
+			<th width="230px">Nazwa zadania</th><th>Termin</th><th>Przypomnienie</th><th width="430 px">Opis</th><th  colspan="2">Akcja</th>
+		</tr>
+<!-- ----------------------------	POBRANIE REKORDÓW ------------------------	-->	
+
+			<tr>
+				<td>".$wiersz['nazwaZadania']."</td>
+				<td class='data'>".$wiersz['termin']."</td>
+				<td class='data'>".$wiersz['przypomnienie']."</td>
+				<td>".$wiersz['opis']."</td>
+
+					<td><a href='zmiana.php?zmiana=".$wiersz['Lp_cal']."'><i class='icon-pencil'></i></a></td>
+					<td><a href='organizer.php?delete=".$wiersz['Lp_cal']."'><i class='icon-trash-empty'></i></a></td>
+
+			</tr>
+		</table>
+	</div>
+	<div class="stopka">copyright &copy Mariusz Krzystoszek A.D. 2018
+</div>
+{% endblock %}
